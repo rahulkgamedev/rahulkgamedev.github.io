@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rahul K | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body {
+  min-height: 100vh;
+  background: linear-gradient(270deg, #020617, #020617, #020617, #0f172a);
+  background-size: 600% 600%;
+  animation: gradientBG 12s ease infinite;
+  color: white;
+  overflow-x: hidden;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+nav a:hover { color: #38bdf8; }
+
+section {
+  min-height: 100vh;
+  padding: 120px 10%;
+}
+
+.hero h1 { font-size: 60px; }
+.hero span { color: #38bdf8; }
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+.glass:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.skills-bar { margin: 15px 0; }
+.skills-bar span { display: block; margin-bottom: 6px; }
+.bar {
+  height: 10px;
+  background: #020617;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bar div { height: 100%; background: #38bdf8; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button, .btn {
+  padding: 12px 20px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <b>Rahul K</b>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <h1>Hi, I'm <span>Rahul K</span></h1>
+  <h3 id="typing"></h3>
+  <p style="margin-top:15px; max-width:750px;">
+    Basic Python Developer, AI/ML Enthusiast, and an aspiring DevOps & Cloud Engineer.
+    I focus on building intelligent systems today and scalable cloud systems tomorrow.
+  </p>
+  <a class="btn" href="https://github.com/rahulkgamedev" target="_blank">Visit My GitHub</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="glass">
+    <p>
+      I am a B.Tech IT student (2026) from Mookambigai College of Engineering (Anna University).
+      I have hands-on experience in Artificial Intelligence and Computer Vision through my internship at FFUTUREWISE.
+    </p>
+    <br>
+    <p>
+      Currently, I work as a <b>basic Python developer</b> and <b>AI/ML enthusiast</b>. My long-term goal is to become
+      a <b>DevOps Engineer and Cloud Engineer</b> working on scalable, automated systems.
+    </p>
+    <br>
+    <p>
+      I prefer building real projects over just collecting certificates.
+    </p>
+  </div>
+
+  <h3 style="margin-top:40px;">Education</h3>
+  <div class="glass">
+    <b>B.Tech Information Technology</b><br>
+    Mookambigai College of Engineering, Anna University<br>
+    2022 – 2026 (Expected)
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="glass">
+    <div class="skills-bar"><span>Python</span><div class="bar"><div style="width:75%"></div></div></div>
+    <div class="skills-bar"><span>AI / Machine Learning</span><div class="bar"><div style="width:70%"></div></div></div>
+    <div class="skills-bar"><span>Computer Vision</span><div class="bar"><div style="width:65%"></div></div></div>
+    <div class="skills-bar"><span>SQL</span><div class="bar"><div style="width:60%"></div></div></div>
+    <div class="skills-bar"><span>Web Development</span><div class="bar"><div style="width:60%"></div></div></div>
+    <div class="skills-bar"><span>Linux / Git</span><div class="bar"><div style="width:55%"></div></div></div>
+  </div>
+
+  <h3 style="margin-top:40px;">Certifications & Tools</h3>
+  <div class="glass grid">
+    <div>✔ C, C++, Java, Python Fundamentals</div>
+    <div>✔ PyCharm, VS Code, Jupyter Notebook</div>
+    <div>✔ MySQL</div>
+    <div>✔ Git & GitHub</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects & Experience</h2>
+  <div class="glass">
+    <h3>AI Intern — FFUTUREWISE (May 2024 – July 2024)</h3>
+    <p>
+      Built Face Recognition System using Deep Learning and Computer Vision.
+      Improved detection accuracy and integrated AI modules into applications.
+    </p>
+  </div>
+
+  <div class="glass">
+    <h3>Robust AI Exam Hall Seat Allotment System</h3>
+    <p>
+      AI-powered seat allocation system ensuring fairness, optimization and automation.
+    </p>
+  </div>
+
+  <div class="glass">
+    <h3>My GitHub Projects</h3>
+    <p>You can find all my code and experiments here:</p>
+    <a class="btn" href="https://github.com/rahulkgamedev" target="_blank">Open GitHub Profile</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="glass grid">
+    <div>
+      <p>📞 9345726010</p>
+      <p>📧 rahulk49767vzbz@gmail.com</p>
+      <p>🔗 <a style="color:#38bdf8" href="https://linkedin.com/in/rahul-k-2a8841279" target="_blank">LinkedIn Profile</a></p>
+      <p>💻 <a style="color:#38bdf8" href="https://github.com/rahulkgamedev" target="_blank">GitHub Profile</a></p>
+    </div>
+
+    <div>
+      <form onsubmit="sendMail(); return false;">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Rahul K — Future DevOps & Cloud Engineer in the making.
+</footer>
+
+<script>
+/* Typing Effect */
+const texts = [
+  "Basic Python Developer",
+  "AI / ML Enthusiast",
+  "Future DevOps Engineer",
+  "Future Cloud Engineer"
+];
+let index = 0, char = 0;
+const typing = document.getElementById("typing");
+
+function typeEffect() {
+  if (char < texts[index].length) {
+    typing.textContent += texts[index].charAt(char);
+    char++;
+    setTimeout(typeEffect, 80);
+  } else {
+    setTimeout(eraseEffect, 1500);
+  }
+}
+function eraseEffect() {
+  if (char > 0) {
+    typing.textContent = texts[index].substring(0, char - 1);
+    char--;
+    setTimeout(eraseEffect, 40);
+  } else {
+    index = (index + 1) % texts.length;
+    setTimeout(typeEffect, 300);
+  }
+}
+typeEffect();
+
+/* Contact Form */
+function sendMail() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const msg = document.getElementById("message").value;
+
+  const mailto = `mailto:rahulk49767vzbz@gmail.com?subject=Portfolio Contact from ${name}&body=From: ${email}%0D%0A%0D%0A${msg}`;
+  window.location.href = mailto;
+}
+</script>
+
+</body>
+</html>
